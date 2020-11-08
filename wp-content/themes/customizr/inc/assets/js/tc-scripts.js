@@ -2376,7 +2376,7 @@ var TCParams = TCParams || {};
         return;
       }
       if ( this.options.addIcon && 0 === $_external_icon.length ) {
-        this.$_el.after('<span class="' + self.options.iconClassName + '">');
+        this.$_el.append('<span class="' + self.options.iconClassName + '">');
       }
       if ( this.options.newTab && '_blank' != this.$_el.attr('target') )
         this.$_el.attr('target' , '_blank');
@@ -4999,10 +4999,17 @@ var czrapp = czrapp || {};
             initOnDomReady : function() {
                 this.timer = 0;
                 this.increment = 1;//used to wait a little bit after the first user scroll actions to trigger the timer
-                $('.menu-item').on('focusin', 'a', function( evt ) {
-                      $(this).closest( '.menu-item' ).addClass('czr-focusin');
-                });
+                $('.menu-item')
+                    .on('keyup', 'a', function( evt ) {
+                          if( 9 != evt.which )
+                            return;
 
+                          var $menuItem = $(this).closest( '.menu-item' );
+                          $menuItem.addClass('czr-focusin');
+                          if ( $menuItem.hasClass('menu-item-has-children') ) {
+                              $menuItem.addClass('czr-parent-menu-navigated');
+                          }
+                    });
             },//init
             eventListener : function() {
                   var self = this;

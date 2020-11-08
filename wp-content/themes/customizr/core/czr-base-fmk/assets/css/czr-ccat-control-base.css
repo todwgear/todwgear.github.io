@@ -72,6 +72,7 @@ input:-ms-input-placeholder {color: #9a9a9a;font-style: italic;}
 .customize-control select {cursor: pointer;width: 99%;}
 .czr-input .wp-picker-container .wp-color-result.button, .customize-control .wp-color-result.button {border-color: #ccc;min-height: 25px;}
 .czr-input .wp-color-result-text, .customize-control .wp-color-result-text {line-height: 24px;height: 24px;}
+.wp-picker-container .iris-alpha-slider {margin-left: 5px !important;}
 .czr-customizr-title {text-transform: uppercase;margin: 1em 0em 5px 0em;font-size: 15px !important;border-bottom: 1px dotted #555;padding-bottom: 5px;text-align: center;}
 h3.czr-customizr-title::before {content: "·";padding-right: 3px;}
 h3.czr-customizr-title::after {content: "·";padding-left: 3px;}
@@ -80,6 +81,7 @@ h3.czr-customizr-title::after {content: "·";padding-left: 3px;}
 i.czr-notice {display: block;clear: both;}
 span.czr-notice {color: #313131;font-size: 12px;font-style: italic;clear: both;display: block;line-height: 18px;}
 .czr-html-before hr, .czr-html-after hr {border-top: 1px solid #c5c5c5;border-bottom: 1px solid #fafafa;margin: 25px 0;}
+.czr-html-after {float: left;width: 100%;}
 .czr-customizer-separator-invisible {border: none;margin-top: 15px;}
 .czr-skin-gen-label {float: left;}
 .czr-skin-gen-color-picker {float: right;}

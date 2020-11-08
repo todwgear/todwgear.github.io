@@ -807,8 +807,9 @@ embed, iframe, object, video {max-width: 100%;}
 #wp-admin-bar-tc-customizr-help .ab-item:before, li#wp-admin-bar-tc-customizr-help a:before {font-family: "Font Awesome 5 Free";font-weight: 400;font-variant: normal;text-transform: none;font-style: normal;line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 #wp-admin-bar-tc-customizr-help .ab-item:before, li#wp-admin-bar-tc-customizr-help a:before {content: "";color: #fff;padding-right: 0;margin-right: 0;top: 2px;position: relative;}
 li#wp-admin-bar-tc-customizr-help a {color: #fff;text-decoration: none;text-shadow: 0 -1px 0 rgba(0,0,0,.25);background-color: #8da65a;background-image: -moz-linear-gradient(top,#008ec2,#006799);background-image: -webkit-gradient(linear,0 0,0 100%,from(#008ec2),to(#006799));background-image: -webkit-linear-gradient(top,#008ec2,#006799);background-image: -o-linear-gradient(top,#008ec2,#006799);background-image: linear-gradient(to bottom,#008ec2,#006799);background-repeat: repeat-x;border-color: #006799;border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);}
-.czr-search-expand {display: none;background: #fff;position: absolute;z-index: 100;top: 49px;right: 0;width: 340px;-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1);box-shadow: 0 1px 0 rgba(255,255,255,.1);}
-.rtl .czr-search-expand {left: 0;right: unset;}
+.czr-search-expand {display: none;background: #fff;position: absolute;z-index: 100;top: 49px;width: 340px;-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.1);box-shadow: 0 1px 0 rgba(255,255,255,.1);}
+.search-icon-left .czr-search-expand {left: 0;}
+.search-icon-right .czr-search-expand {right: 0;}
 .czr-search-expand .czr-search-expand-inner {border: 1px solid #eee;box-shadow: 0 0 5px rgba(0,0,0,.2),0 1px 0 rgba(255,255,255,.15);transition: -webkit-transform .35s ease-in-out,height .25s ease-in-out,background-color .45s ease-in-out;transition: transform .35s ease-in-out,height .25s ease-in-out,background-color .45s ease-in-out;padding: 15px;}
 .czr-search-expand .czr-search-expand-inner .form-group {margin: 0;}
 .czr-search-expand .czr-search-expand-inner .form-group .czr-search-field {outline: 0 !important;color: #313131 !important;border-color: #313131 !important;}
